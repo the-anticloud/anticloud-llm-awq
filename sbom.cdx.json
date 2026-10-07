@@ -1,0 +1,187 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:748bd348-14c6-5945-b950-4c9568a01cb1",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T10:18:12Z",
+  "component": {
+   "type": "application",
+   "name": "LLM_AWQ",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/LLM_AWQ@83b357604d34",
+   "purl": "pkg:generic/anticloud/LLM_AWQ@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "accelerate",
+   "version": "==0.34.2",
+   "purl": "pkg:pypi/accelerate@0.34.2",
+   "bom-ref": "pypi/accelerate@==0.34.2"
+  },
+  {
+   "type": "library",
+   "name": "sentencepiece",
+   "version": "unspecified",
+   "purl": "pkg:pypi/sentencepiece",
+   "bom-ref": "pypi/sentencepiece@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "tokenizers",
+   "version": ">=0.12.1",
+   "purl": "pkg:pypi/tokenizers@0.12.1",
+   "bom-ref": "pypi/tokenizers@>=0.12.1"
+  },
+  {
+   "type": "library",
+   "name": "torch",
+   "version": "==2.3.0",
+   "purl": "pkg:pypi/torch@2.3.0",
+   "bom-ref": "pypi/torch@==2.3.0"
+  },
+  {
+   "type": "library",
+   "name": "torchvision",
+   "version": "==0.18.0",
+   "purl": "pkg:pypi/torchvision@0.18.0",
+   "bom-ref": "pypi/torchvision@==0.18.0"
+  },
+  {
+   "type": "library",
+   "name": "transformers",
+   "version": "==4.46.0",
+   "purl": "pkg:pypi/transformers@4.46.0",
+   "bom-ref": "pypi/transformers@==4.46.0"
+  },
+  {
+   "type": "library",
+   "name": "lm_eval",
+   "version": "==0.3.0",
+   "purl": "pkg:pypi/lm-eval@0.3.0",
+   "bom-ref": "pypi/lm_eval@==0.3.0"
+  },
+  {
+   "type": "library",
+   "name": "texttable",
+   "version": "unspecified",
+   "purl": "pkg:pypi/texttable",
+   "bom-ref": "pypi/texttable@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "toml",
+   "version": "unspecified",
+   "purl": "pkg:pypi/toml",
+   "bom-ref": "pypi/toml@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "attributedict",
+   "version": "unspecified",
+   "purl": "pkg:pypi/attributedict",
+   "bom-ref": "pypi/attributedict@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "protobuf",
+   "version": "unspecified",
+   "purl": "pkg:pypi/protobuf",
+   "bom-ref": "pypi/protobuf@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "gradio",
+   "version": "==3.35.2",
+   "purl": "pkg:pypi/gradio@3.35.2",
+   "bom-ref": "pypi/gradio@==3.35.2"
+  },
+  {
+   "type": "library",
+   "name": "gradio_client",
+   "version": "==0.2.9",
+   "purl": "pkg:pypi/gradio-client@0.2.9",
+   "bom-ref": "pypi/gradio_client@==0.2.9"
+  },
+  {
+   "type": "library",
+   "name": "fastapi",
+   "version": "unspecified",
+   "purl": "pkg:pypi/fastapi",
+   "bom-ref": "pypi/fastapi@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "uvicorn",
+   "version": "unspecified",
+   "purl": "pkg:pypi/uvicorn",
+   "bom-ref": "pypi/uvicorn@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "pydantic",
+   "version": "==1.10.19",
+   "purl": "pkg:pypi/pydantic@1.10.19",
+   "bom-ref": "pypi/pydantic@==1.10.19"
+  },
+  {
+   "type": "library",
+   "name": "-std",
+   "version": "=c++17",
+   "purl": "pkg:pypi/-std@c++17",
+   "bom-ref": "pypi/-std@=c++17"
+  },
+  {
+   "type": "library",
+   "name": "--threads",
+   "version": "=8",
+   "purl": "pkg:pypi/--threads@8",
+   "bom-ref": "pypi/--threads@=8"
+  },
+  {
+   "type": "library",
+   "name": "from",
+   "version": "unspecified",
+   "purl": "pkg:pypi/from",
+   "bom-ref": "pypi/from@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "arch",
+   "version": "=compute_70,code=sm_70",
+   "purl": "pkg:pypi/arch@compute_70,code=sm_70",
+   "bom-ref": "pypi/arch@=compute_70,code=sm_70"
+  }
+ ],
+ "source": {
+  "git": {
+   "head": null,
+   "url": null,
+   "sha_unverified": true,
+   "note": "contamination removed; resolve via GitHub API before quoting"
+  }
+ }
+}

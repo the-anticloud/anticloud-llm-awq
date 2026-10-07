@@ -1,0 +1,1040 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "LLM_AWQ",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CHIP_QUANTIZATION\\LLM_AWQ\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 180,
+  "source_files_scanned": 121,
+  "lines_of_code": 25618,
+  "languages": {
+   ".py": 74,
+   ".png": 18,
+   ".h": 17,
+   ".sh": 16,
+   ".cu": 12,
+   ".jpg": 8,
+   ".gif": 8,
+   ".cuh": 7,
+   ".md": 5,
+   ".mp4": 3,
+   ".jpeg": 3,
+   "(none)": 2,
+   ".ipynb": 2,
+   ".cpp": 2,
+   ".toml": 1
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 23,
+  "unique": 20,
+  "by_ecosystem": {
+   "pypi": 23
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "accelerate",
+    "version": "==0.34.2",
+    "source_file": "pyproject.toml",
+    "raw": "accelerate==0.34.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "sentencepiece",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "sentencepiece"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tokenizers",
+    "version": ">=0.12.1",
+    "source_file": "pyproject.toml",
+    "raw": "tokenizers>=0.12.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "torch",
+    "version": "==2.3.0",
+    "source_file": "pyproject.toml",
+    "raw": "torch==2.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "torchvision",
+    "version": "==0.18.0",
+    "source_file": "pyproject.toml",
+    "raw": "torchvision==0.18.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "transformers",
+    "version": "==4.46.0",
+    "source_file": "pyproject.toml",
+    "raw": "transformers==4.46.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "lm_eval",
+    "version": "==0.3.0",
+    "source_file": "pyproject.toml",
+    "raw": "lm_eval==0.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "texttable",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "texttable"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "toml",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "toml"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "attributedict",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "attributedict"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "protobuf",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "protobuf"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "gradio",
+    "version": "==3.35.2",
+    "source_file": "pyproject.toml",
+    "raw": "gradio==3.35.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "gradio_client",
+    "version": "==0.2.9",
+    "source_file": "pyproject.toml",
+    "raw": "gradio_client==0.2.9"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "fastapi",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "fastapi"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "uvicorn",
+    "version": "",
+    "source_file": "pyproject.toml",
+    "raw": "uvicorn"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydantic",
+    "version": "==1.10.19",
+    "source_file": "pyproject.toml",
+    "raw": "pydantic==1.10.19"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-std",
+    "version": "=c++17",
+    "source_file": "awq/kernels/setup.py",
+    "raw": "-std=c++17"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-std",
+    "version": "=c++17",
+    "source_file": "awq/kernels/setup.py",
+    "raw": "-std=c++17"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "--threads",
+    "version": "=8",
+    "source_file": "awq/kernels/setup.py",
+    "raw": "--threads=8"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "from",
+    "version": "",
+    "source_file": "awq/kernels/csrc/attention/setup.py",
+    "raw": "from"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "arch",
+    "version": "=compute_70,code=sm_70",
+    "source_file": "awq/kernels/csrc/attention/setup.py",
+    "raw": "arch=compute_70,code=sm_70"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "arch",
+    "version": "=compute_80,code=sm_80",
+    "source_file": "awq/kernels/csrc/attention/setup.py",
+    "raw": "arch=compute_80,code=sm_80"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "arch",
+    "version": "=compute_90,code=sm_90",
+    "source_file": "awq/kernels/csrc/attention/setup.py",
+    "raw": "arch=compute_90,code=sm_90"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 56,
+  "files_with_findings": 41,
+  "severity": {
+   "high": 14,
+   "medium": 2,
+   "low": 40
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tinychat/serve/gradio_web_server.py",
+      "line": 447,
+      "cwe": "CWE-327",
+      "snippet": "all_image_hash = [hashlib.md5(image.tobytes()).hexdigest() for image in all_images]"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 15,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tinychat/internvl_benchmark.py",
+      "line": 93,
+      "cwe": "CWE-95",
+      "snippet": "model.language_model = model.language_model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/internvl_demo.py",
+      "line": 107,
+      "cwe": "CWE-95",
+      "snippet": "model = model.cuda().eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/nvila_benchmark.py",
+      "line": 88,
+      "cwe": "CWE-95",
+      "snippet": "model.llm = model.llm.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/nvila_demo.py",
+      "line": 115,
+      "cwe": "CWE-95",
+      "snippet": "model = model.cuda().eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/split_ckpt.py",
+      "line": 11,
+      "cwe": "CWE-78",
+      "snippet": "os.system(f\"mkdir -p {out_folder_path}\")"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/vila10_demo.py",
+      "line": 143,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/vila15_demo.py",
+      "line": 157,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/utils/llava_image_processing.py",
+      "line": 48,
+      "cwe": "CWE-78",
+      "snippet": "os.system(f\"termvisage --query-timeout 1 {image} -H left --height 12\")"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/serve/model_worker_new.py",
+      "line": 167,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/models/internvl3.py",
+      "line": 111,
+      "cwe": "CWE-95",
+      "snippet": "self.vision_model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tinychat/models/nvila/builder.py",
+      "line": 188,
+      "cwe": "CWE-95",
+      "snippet": "torch_dtype=eval(config.model_dtype),"
+     },
+     {
+      "severity": "high",
+      "file": "awq/entry.py",
+      "line": 188,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "awq/utils/lm_eval_adaptor.py",
+      "line": 15,
+      "cwe": "CWE-95",
+      "snippet": "self.model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "awq/quantize/smooth.py",
+      "line": 25,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "medium",
+      "file": "awq/kernels/csrc/attention/setup.py",
+      "line": 45,
+      "cwe": "CWE-89",
+      "snippet": "\"Pytorch binaries were compiled with Cuda {}.\\n\".format(torch.version.cuda)\n            + \"In some cases, a minor-version mismatch will not cause later errors:  \""
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 21,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tinychat/demo.py",
+      "line": 22,
+      "cwe": "CWE-",
+      "snippet": "(\"n_threads\", 1),  # TODO: fix this"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/utils/conversation_utils.py",
+      "line": 8,
+      "cwe": "CWE-",
+      "snippet": "(\"n_threads\", 1),  # TODO: fix this"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/utils/load_quant.py",
+      "line": 151,
+      "cwe": "CWE-",
+      "snippet": "# TODO: mem-efficient load for llama"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/stream_generators/llava_stream_gen.py",
+      "line": 127,
+      "cwe": "CWE-",
+      "snippet": "batch_size = 1  # TODO: support multi-batch"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/modules/fused_siglipdecoder.py",
+      "line": 43,
+      "cwe": "CWE-",
+      "snippet": "# TODO Find why this code is necessary"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/llava_llama.py",
+      "line": 146,
+      "cwe": "CWE-",
+      "snippet": "# TODO: Need to fix if vision_tower.config.use_im_start_end == True"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/mpt.py",
+      "line": 147,
+      "cwe": "CWE-",
+      "snippet": "# TODO (Haotian): fix device"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila_qwen2.py",
+      "line": 60,
+      "cwe": "CWE-",
+      "snippet": "# TODO: Skip the weight loading to save time"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila/builder.py",
+      "line": 90,
+      "cwe": "CWE-",
+      "snippet": "):  # TODO: Also change the name of this class"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila/llava_arch.py",
+      "line": 51,
+      "cwe": "CWE-",
+      "snippet": "# TODO(ligeng): figure out how from_config and from_pretrained works in HF implementation."
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/llava_base/llava_arch.py",
+      "line": 161,
+      "cwe": "CWE-",
+      "snippet": "# TODO: image start / end is not implemented here to support pretraining."
+     },
+     {
+      "severity": "low",
+      "file": "awq/entry.py",
+      "line": 258,
+      "cwe": "CWE-",
+      "snippet": "# TODO: can we remove this?"
+     },
+     {
+      "severity": "low",
+      "file": "awq/utils/lm_eval_adaptor.py",
+      "line": 48,
+      "cwe": "CWE-",
+      "snippet": "return 2048  # TODO: did not check this"
+     },
+     {
+      "severity": "low",
+      "file": "awq/quantize/pre_quant.py",
+      "line": 136,
+      "cwe": "CWE-",
+      "snippet": "# use this Catcher hack for now"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/setup.py",
+      "line": 10,
+      "cwe": "CWE-",
+      "snippet": "\"-DENABLE_BF16\",  # TODO"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/quantization_new/gemv/gemv_cuda.cu",
+      "line": 118,
+      "cwe": "CWE-",
+      "snippet": "// TODO: use make_divisible"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/quantization/gemm_cuda_gen.cu",
+      "line": 118,
+      "cwe": "CWE-",
+      "snippet": "// TODO (Haotian): load scales and zero points to smem"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/quantization/gemv_cuda.cu",
+      "line": 71,
+      "cwe": "CWE-",
+      "snippet": "// TODO (Haotian): zeros_w is incorrect, after fixing we got misaligned address"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention.h",
+      "line": 93,
+      "cwe": "CWE-",
+      "snippet": "// The current timestep. TODO(bhsueh) Check that do we only this param in cross attention?"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention_template.hpp",
+      "line": 888,
+      "cwe": "CWE-",
+      "snippet": "// TODO - change to tlength"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/setup.py",
+      "line": 133,
+      "cwe": "CWE-",
+      "snippet": "\"-DENABLE_BF16\",  # TODO"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 19,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tinychat/utils/llava_image_processing.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/utils/log_utils.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/serve/controller.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/serve/gradio_web_server.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/serve/llava_conv.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/serve/model_worker.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/serve/model_worker_new.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/llava_llama.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila_qwen2.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila/builder.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila/configuration_llava.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/nvila/llava_arch.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "tinychat/models/llava_base/llava_arch.py",
+      "line": 8,
+      "cwe": "CWE-319",
+      "snippet": "#        http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/quantization_new/gemv/gemv_cuda.cu",
+      "line": 9,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/cuda_bf16_wrapper.h",
+      "line": 10,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention.cu",
+      "line": 10,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention.h",
+      "line": 10,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention_template.hpp",
+      "line": 10,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "awq/kernels/csrc/attention/decoder_masked_multihead_attention_utils.h",
+      "line": 10,
+      "cwe": "CWE-319",
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 21,
+  "files_with_findings": 21,
+  "severity": {
+   "high": 1,
+   "medium": 19,
+   "low": 1
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tinychat/models/internvl/conversation.py",
+      "line": 65,
+      "cwe": "CWE-1427",
+      "snippet": "system_prompt = self.system_template.format(system_message=self.system_message)"
+     }
+    ]
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tinychat/utils/log_utils.py",
+      "line": 131,
+      "cwe": "CWE-798",
+      "snippet": "\"Authorization\": \"Bearer \" + os.environ[\"OPENAI_API_KEY\"],"
+     }
+    ]
+   },
+   "LLM03-SupplyChain": {
+    "count": 19,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tinychat/benchmark.py",
+      "line": 115,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(args.model_path, trust_remote_code=True)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/demo.py",
+      "line": 172,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(args.model_path, trust_remote_code=True)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/internvl_benchmark.py",
+      "line": 90,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(args.model_path, trust_remote_code=True)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/internvl_demo.py",
+      "line": 69,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(args.model_path, trust_remote_code=True)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/nvila_benchmark.py",
+      "line": 85,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(args.model_path)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/nvila_demo.py",
+      "line": 50,
+      "cwe": "CWE-494",
+      "snippet": "hf_hub_download("
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/vila10_demo.py",
+      "line": 53,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained(args.model_path, use_fast=False)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/vila15_demo.py",
+      "line": 55,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/serve/model_worker.py",
+      "line": 126,
+      "cwe": "CWE-494",
+      "snippet": "self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/serve/model_worker_new.py",
+      "line": 129,
+      "cwe": "CWE-494",
+      "snippet": "self.tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/internvl3.py",
+      "line": 66,
+      "cwe": "CWE-494",
+      "snippet": "self.tokenizer = AutoTokenizer.from_pretrained(config.name_or_path, trust_remote_code=True, use_fast=False)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/nvila_qwen2.py",
+      "line": 61,
+      "cwe": "CWE-494",
+      "snippet": "self.llm_cfg = AutoConfig.from_pretrained(self.llm_cfg, init_weights=False)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/vila_llama.py",
+      "line": 50,
+      "cwe": "CWE-494",
+      "snippet": "llm_cfg = AutoConfig.from_pretrained(llm_cfg)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/nvila/builder.py",
+      "line": 75,
+      "cwe": "CWE-494",
+      "snippet": "llm_cfg = AutoConfig.from_pretrained(model_name_or_path)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/nvila/llava_arch.py",
+      "line": 102,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(model_path_or_config)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/llava_base/multimodal_encoder/clip_encoder.py",
+      "line": 22,
+      "cwe": "CWE-494",
+      "snippet": "self.cfg_only = CLIPVisionConfig.from_pretrained(self.vision_tower_name)"
+     },
+     {
+      "severity": "medium",
+      "file": "tinychat/models/internvl/configuration_internvl.py",
+      "line": 110,
+      "cwe": "CWE-494",
+      "snippet": "def from_pretrained(cls, pretrained_model_name_or_path: Union[str, os.PathLike], **kwargs) -> 'PretrainedConfig':"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/convert_to_hf.py",
+      "line": 53,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(original_model_path)"
+     },
+     {
+      "severity": "medium",
+      "file": "awq/entry.py",
+      "line": 141,
+      "cwe": "CWE-494",
+      "snippet": "config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)"
+     }
+    ]
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:748bd348-14c6-5945-b950-4c9568a01cb1",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T10:18:12Z",
+   "component": {
+    "type": "application",
+    "name": "LLM_AWQ",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/LLM_AWQ@83b357604d34",
+    "purl": "pkg:generic/anticloud/LLM_AWQ@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "accelerate",
+    "version": "==0.34.2",
+    "purl": "pkg:pypi/accelerate@0.34.2",
+    "bom-ref": "pypi/accelerate@==0.34.2"
+   },
+   {
+    "type": "library",
+    "name": "sentencepiece",
+    "version": "unspecified",
+    "purl": "pkg:pypi/sentencepiece",
+    "bom-ref": "pypi/sentencepiece@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "tokenizers",
+    "version": ">=0.12.1",
+    "purl": "pkg:pypi/tokenizers@0.12.1",
+    "bom-ref": "pypi/tokenizers@>=0.12.1"
+   },
+   {
+    "type": "library",
+    "name": "torch",
+    "version": "==2.3.0",
+    "purl": "pkg:pypi/torch@2.3.0",
+    "bom-ref": "pypi/torch@==2.3.0"
+   },
+   {
+    "type": "library",
+    "name": "torchvision",
+    "version": "==0.18.0",
+    "purl": "pkg:pypi/torchvision@0.18.0",
+    "bom-ref": "pypi/torchvision@==0.18.0"
+   },
+   {
+    "type": "library",
+    "name": "transformers",
+    "version": "==4.46.0",
+    "purl": "pkg:pypi/transformers@4.46.0",
+    "bom-ref": "pypi/transformers@==4.46.0"
+   },
+   {
+    "type": "library",
+    "name": "lm_eval",
+    "version": "==0.3.0",
+    "purl": "pkg:pypi/lm-eval@0.3.0",
+    "bom-ref": "pypi/lm_eval@==0.3.0"
+   },
+   {
+    "type": "library",
+    "name": "texttable",
+    "version": "unspecified",
+    "purl": "pkg:pypi/texttable",
+    "bom-ref": "pypi/texttable@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "toml",
+    "version": "unspecified",
+    "purl": "pkg:pypi/toml",
+    "bom-ref": "pypi/toml@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "attributedict",
+    "version": "unspecified",
+    "purl": "pkg:pypi/attributedict",
+    "bom-ref": "pypi/attributedict@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "protobuf",
+    "version": "unspecified",
+    "purl": "pkg:pypi/protobuf",
+    "bom-ref": "pypi/protobuf@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "gradio",
+    "version": "==3.35.2",
+    "purl": "pkg:pypi/gradio@3.35.2",
+    "bom-ref": "pypi/gradio@==3.35.2"
+   },
+   {
+    "type": "library",
+    "name": "gradio_client",
+    "version": "==0.2.9",
+    "purl": "pkg:pypi/gradio-client@0.2.9",
+    "bom-ref": "pypi/gradio_client@==0.2.9"
+   },
+   {
+    "type": "library",
+    "name": "fastapi",
+    "version": "unspecified",
+    "purl": "pkg:pypi/fastapi",
+    "bom-ref": "pypi/fastapi@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "uvicorn",
+    "version": "unspecified",
+    "purl": "pkg:pypi/uvicorn",
+    "bom-ref": "pypi/uvicorn@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "pydantic",
+    "version": "==1.10.19",
+    "purl": "pkg:pypi/pydantic@1.10.19",
+    "bom-ref": "pypi/pydantic@==1.10.19"
+   },
+   {
+    "type": "library",
+    "name": "-std",
+    "version": "=c++17",
+    "purl": "pkg:pypi/-std@c++17",
+    "bom-ref": "pypi/-std@=c++17"
+   },
+   {
+    "type": "library",
+    "name": "--threads",
+    "version": "=8",
+    "purl": "pkg:pypi/--threads@8",
+    "bom-ref": "pypi/--threads@=8"
+   },
+   {
+    "type": "library",
+    "name": "from",
+    "version": "unspecified",
+    "purl": "pkg:pypi/from",
+    "bom-ref": "pypi/from@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "arch",
+    "version": "=compute_70,code=sm_70",
+    "purl": "pkg:pypi/arch@compute_70,code=sm_70",
+    "bom-ref": "pypi/arch@=compute_70,code=sm_70"
+   }
+  ]
+ },
+ "elapsed_seconds": 25.47
+}
